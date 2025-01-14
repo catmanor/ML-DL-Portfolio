@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Results</title>
+</head>
+<body>
+    <h1>Positive Reviews Key Phrases</h1>
+    <p>Total Positive Reviews: {{ pos_count }}</p>
+    <iframe src="{{ url_for('static', filename='positive_vis.html') }}" width="100%" height="500"></iframe>
+
+    <h1>Negative Reviews Key Phrases</h1>
+    <p>Total Negative Reviews: {{ neg_count }}</p>
+    <iframe src="{{ url_for('static', filename='negative_vis.html') }}" width="100%" height="500"></iframe>
+</body>
+</html>
+
